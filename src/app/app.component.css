@@ -1,0 +1,9 @@
+.lever::after {
+  background-color: #fff !important;
+}
+input[type=checkbox]:checked{
+  background-color: limegreen !important;
+}
+.setting{
+  height: 30px;
+}
