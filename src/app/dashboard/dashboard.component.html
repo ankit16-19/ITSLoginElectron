@@ -1,0 +1,69 @@
+<div class="container">
+  <round-progress
+    [max]="8"
+    [current]="2"
+    [radius]="100"
+    [stroke]="25">
+  </round-progress>
+  <hr>
+  <button type="button" class="btn btn-primary btn-lg btn-block  large btn-success">Connect</button>
+  <button type="button" class="btn btn-default btn-lg btn-block  large">Logout</button>
+
+  <h4><strong>Devices:</strong></h4>
+  <!--<accordion>-->
+      <!--<accordion-group  panelClass="panel panel-primary">-->
+        <!--<div accordion-heading class="clearfix active">-->
+          <!--<p>One plus 5T</p>-->
+        <!--</div>-->
+        <!--<button type="button" class="btn btn-danger">Logout</button>-->
+        <!--<button type="button" class="btn btn-danger">Revoke Authentication</button>-->
+      <!--</accordion-group>-->
+    <!--<accordion-group #group>-->
+      <!--<div accordion-heading class="clearfix">-->
+        <!--<p>Windows 10</p>-->
+      <!--</div>-->
+      <!--<button type="button" class="btn btn-danger">Logout</button>-->
+      <!--<button type="button" class="btn btn-danger">Revoke Authentication</button>-->
+    <!--</accordion-group>-->
+  <!--</accordion>-->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      OnePlus 5T
+      <span style="color: limegreen;">Active</span>
+        200kbps
+      <mat-icon class="pull-right">highlight_off</mat-icon>
+      <i class="material-icons pull-right">power_settings_new</i>
+    </div>
+  </div>
+  <div class="panel panel-default">
+  <div class="panel-body">
+    windows 10
+    <span style="color: red;">InActive</span>
+
+    <mat-icon class="pull-right">highlight_off</mat-icon>
+    <i class="material-icons pull-right">power_settings_new</i>
+  </div>
+  </div>
+
+
+  </div>
+
+
+
+<style>
+  round-progress{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .panel{
+    margin-bottom: 10px !important;
+  }
+  .connect{
+    background-color: limegreen;
+  }
+  .large{
+    width: 90%;
+    margin-left:5%
+  }
+</style>

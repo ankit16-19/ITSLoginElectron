@@ -20,6 +20,7 @@ function createWindow () {
   win.on('closed', function () {
     win = null
   })
+  win.webContents.openDevTools()
 }
 // Create window on electron intialization
 app.on('ready', createWindow)
