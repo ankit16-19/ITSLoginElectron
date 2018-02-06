@@ -27,7 +27,7 @@ async function sendConnectionRequest() {
         form:
           { magic: res.req.path.substr(res.req.path.indexOf('?')+ 1),
             username: 'b216008',
-            password: 'ankit16@d',
+            password: '*******',
             '4Tredir': 'testing' } };
 
       request(options, function (error, response, body) {
